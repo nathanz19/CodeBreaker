@@ -6,10 +6,55 @@
   <meta name="viewport" content="width=device-width">
   <title>CodeBreaker</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" async></script>
 </head>
 
 <body>
-  <p>CodeBreakers</p>
+  <!-- Start Page -->
+  <h1 id="title">CodeBreakers</h1>
+  <p id="description">You are a international sneak thief and you have 7 tries to try to guess the 3 digit code to
+    access the vault before the police arrive. Can you do it?</p>
+  <img
+    src="https://static.vecteezy.com/system/resources/previews/021/978/521/original/cartoon-stealthy-thief-free-png.png"
+    alt="Thief Picture" id="thief-pic">
+  <audio src="ButtonPlate Click (Minecraft Sound) - Sound Effect for editing.mp3" id="clicking"></audio>
+  <button type="button" id="startBut">Start Game</button>
+
+  <!-- Main Page -->
+  <main id="main-layout">
+    <!--Clock-->
+    <p id="clock">Clock: <span id="clock-val">7</span></p>
+
+    <div class="game-structure">
+      <!-- Guesses -->
+      <div>
+        <div id="guesses-box">
+          <p id="guess1"></p>
+          <p id="guess2"></p>
+          <p id="guess3"></p>
+        </div>
+        <div id="number-pad">
+          <button type="button" id="one">1</button>
+          <button type="button" id="two">2</button>
+          <button type="button" id="three">3</button>
+          <audio src="Button Press sound - Sound Effects.mp3" id="clicking1"></audio>
+        </div>
+        <div id="submit-pad">
+          <button type="button" id="submit">Submit</button>
+          <audio src="WRONG ANSWER SOUND EFFECT.mp3" id="wrong"></audio>
+          <audio src="Correct Answer Sound Effect.mp3" id="correct"></audio>
+          <audio src="Aww Sound Effect.mp3" id="caught"></audio>
+        </div>
+      </div>
+      <div id="console">
+        <p id="console-text">You have 7 tries to guess the 3 digit code before the police arrives. Each digit can only
+          be from 1-3. Good luck!</p>
+      </div>
+
+    </div>
+
+
+  </main>
 </body>
 
 </html>
