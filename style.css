@@ -1,7 +1,8 @@
-html {
+body {
   height: 100%;
   width: 100%;
   background-color: #8eafd2;
+  align-self: center;
 }
 
 /*Start Screen*/
@@ -57,8 +58,8 @@ h1 {
   text-align: center;
 }
 
-.game-structure {
-  display: flex;
+#game-structure {
+  display: block;
 }
 
 #guesses-box {
@@ -66,7 +67,7 @@ h1 {
   background-color: gray;
   width: 700px;
   height: 230px;
-  justify-content: center;
+
 }
 
 #guess1 {
@@ -149,13 +150,22 @@ h1 {
 
 #console {
   width: 700px;
-  height: 500px;
+  height: 200px;
   background-color: #b5a6a6;
-  margin-left: 60px;
   border-radius: 30px;
 }
+
 #console-text {
   text-align: center;
   margin: 20px;
-  font-size: 50px;
+  font-size: 200%;
+  font-family: 'Courier New', monospace;
+}
+
+#desktop-view {
+  width: 200px;
+  margin-top: 20px;
+  height: 40px;
+  font-size: 100%;
+  font-family: 'Courier New', monospace;
 }

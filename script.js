@@ -103,5 +103,22 @@ function checkGuess() {
     audioG.play();
     consoleText.innerHTML = "You have been caught and arrested by the police. Gg go next."
   }
+}
 
+const desktopView = document.getElementById("desktop-view");
+desktopView.addEventListener("click", view);
+viewSet = 0; 
+function view() {
+  if (viewSet == 0) {
+    document.getElementById("game-structure").style.display = "flex";
+    document.getElementById("console").style.margin = "40px";
+    desktopView.innerHTML = "Mobile View";
+    viewSet = 1;
+  } else {
+    document.getElementById("game-structure").style.display = "block";
+    document.getElementById("console").style.margin = "20px";
+    desktopView.innerHTML = "Desktop View";
+    viewSet = 0;
+  }
+  
 }
